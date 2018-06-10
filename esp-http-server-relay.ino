@@ -3,11 +3,8 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-const char* ssid = "betalab";
-const char* password = "deltalab";
-
-//const char* ssid = "gogomil";
-//const char* password = "gogomil123";
+const char* ssid = "gogomil";
+const char* password = "gogomil123";
 
 const char* module_name = "Module 1";
 
@@ -30,6 +27,9 @@ void handleRoot() {
   message += "    <meta http-equiv='refresh' content=\"10; URL='/'\" />\n";
   message += "  </head>\n";
   message += "  <body>\n";
+  message += "    <h1>";
+  message += module_name;
+  message += "    </h1>\n";
   message += "    <form action='/switch' method='get'>\n";
   message += "      <input type='submit' value='Relay is now ";
   if (relay_state) {
