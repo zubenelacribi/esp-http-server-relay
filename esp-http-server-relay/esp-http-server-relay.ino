@@ -102,7 +102,7 @@ void setup(void){
   digitalWrite(relay, 0);
   Serial.begin(115200);
   WiFi.begin(ssid, password);
-  Serial.println("");
+  Serial.println();
 
   connectToWifiNetwork();
 
