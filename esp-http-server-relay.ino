@@ -1,12 +1,13 @@
+const char* ssid = "gogomil";
+const char* password = "gogomil123";
+const char* module_name = "Module 1";
+
+
+
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
-
-const char* ssid = "gogomil";
-const char* password = "gogomil123";
-
-const char* module_name = "Module 1";
 
 ESP8266WebServer server(80);
 
